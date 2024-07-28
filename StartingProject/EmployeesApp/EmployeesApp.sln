@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeesApp", "EmployeesApp\EmployeesApp.csproj", "{07F07DDF-C172-4180-A2F3-6BD37F76E94B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesApp.Tests", "EmployeesApp.Tests\EmployeesApp.Tests.csproj", "{9EEE4A44-F694-4E23-83F4-BCDC76DD9878}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeesApp.Tests", "EmployeesApp.Tests\EmployeesApp.Tests.csproj", "{9EEE4A44-F694-4E23-83F4-BCDC76DD9878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesApp.IntegrationTests", "EmployeesApp.IntegrationTests\EmployeesApp.IntegrationTests.csproj", "{91C4A7E6-7390-4000-BE8B-E4157F86F795}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9EEE4A44-F694-4E23-83F4-BCDC76DD9878}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EEE4A44-F694-4E23-83F4-BCDC76DD9878}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EEE4A44-F694-4E23-83F4-BCDC76DD9878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C4A7E6-7390-4000-BE8B-E4157F86F795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C4A7E6-7390-4000-BE8B-E4157F86F795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C4A7E6-7390-4000-BE8B-E4157F86F795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C4A7E6-7390-4000-BE8B-E4157F86F795}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
