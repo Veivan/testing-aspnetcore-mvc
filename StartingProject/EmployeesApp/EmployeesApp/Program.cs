@@ -3,11 +3,15 @@ using EmployeesApp.Extensions;
 using EmployeesApp.Models;
 using EmployeesApp.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<EmployeeContext>(opts =>
-			   opts.UseSqlServer(builder.Configuration.GetConnectionString("sqlConnection")));
+//opts.UseSqlServer(builder.Configuration.GetConnectionString("sqlConnection")));
+opts.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=CatalogServ;Trusted_Connection=True;"));
+//opts.UseInMemoryDatabase("CatalogService"));
+
 
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 

@@ -17,7 +17,11 @@ namespace EmployeesApp.Extensions
                 {
                     try
                     {
-                        appContext.Database.Migrate();
+                        if (!appContext.Database.IsInMemory())
+                        {
+                            appContext.Database.Migrate();
+                        }
+                        //appContext.Database.Migrate();
                     }
                     catch (Exception ex)
                     {
